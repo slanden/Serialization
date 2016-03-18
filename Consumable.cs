@@ -8,7 +8,7 @@ namespace Serialization
 {
     class Consumable : IConsumable
     {
-        List<IModifier> effects = new List<IModifier>();
+        List<Stats.Effect> effects = new List<Stats.Effect>();
         public void Use()
         {
             //for (int i = 0; i < effects.Last; ++i)

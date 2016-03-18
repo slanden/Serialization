@@ -28,44 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Ingrediants = new System.Windows.Forms.TableLayoutPanel();
+            this.button_createConsumable = new System.Windows.Forms.Button();
+            this.statsBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // Ingrediants
+            // button_createConsumable
             // 
-            this.Ingrediants.ColumnCount = 1;
-            this.Ingrediants.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Ingrediants.Location = new System.Drawing.Point(12, 12);
-            this.Ingrediants.Name = "Ingrediants";
-            this.Ingrediants.RowCount = 10;
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.Ingrediants.Size = new System.Drawing.Size(133, 282);
-            this.Ingrediants.TabIndex = 0;
+            this.button_createConsumable.Location = new System.Drawing.Point(590, 205);
+            this.button_createConsumable.Name = "button_createConsumable";
+            this.button_createConsumable.Size = new System.Drawing.Size(75, 23);
+            this.button_createConsumable.TabIndex = 1;
+            this.button_createConsumable.Text = "Create";
+            this.button_createConsumable.UseVisualStyleBackColor = true;
+            // 
+            // statsBox
+            // 
+            this.statsBox.FormattingEnabled = true;
+            this.statsBox.Location = new System.Drawing.Point(567, 104);
+            this.statsBox.Name = "statsBox";
+            this.statsBox.Size = new System.Drawing.Size(120, 95);
+            this.statsBox.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 438);
-            this.Controls.Add(this.Ingrediants);
+            this.ClientSize = new System.Drawing.Size(884, 447);
+            this.Controls.Add(this.statsBox);
+            this.Controls.Add(this.button_createConsumable);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private System.Windows.Forms.Button button_createConsumable;
+        private System.Windows.Forms.ListBox statsBox;
 
-        private System.Windows.Forms.TableLayoutPanel Ingrediants;
+
     }
 }
 

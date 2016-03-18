@@ -1,1 +1,9 @@
 C:\Users\shelby.landen\Desktop\GitHub\Serialization\bin\Debug\Serialization.exe.config
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\bin\Debug\Serialization.exe
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\bin\Debug\Serialization.pdb
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.csprojResolveAssemblyReference.cache
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.Form1.resources
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.Properties.Resources.resources
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.csproj.GenerateResource.Cache
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.exe
+C:\Users\shelby.landen\Desktop\GitHub\Serialization\obj\Debug\Serialization.pdb
