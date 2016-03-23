@@ -30,11 +30,12 @@
         {
             this.button_createConsumable = new System.Windows.Forms.Button();
             this.statsBox = new System.Windows.Forms.ListBox();
+            this.statValueBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button_createConsumable
             // 
-            this.button_createConsumable.Location = new System.Drawing.Point(590, 205);
+            this.button_createConsumable.Location = new System.Drawing.Point(602, 187);
             this.button_createConsumable.Name = "button_createConsumable";
             this.button_createConsumable.Size = new System.Drawing.Size(75, 23);
             this.button_createConsumable.TabIndex = 1;
@@ -44,16 +45,27 @@
             // statsBox
             // 
             this.statsBox.FormattingEnabled = true;
-            this.statsBox.Location = new System.Drawing.Point(567, 104);
+            this.statsBox.Location = new System.Drawing.Point(565, 59);
             this.statsBox.Name = "statsBox";
-            this.statsBox.Size = new System.Drawing.Size(120, 95);
+            this.statsBox.Size = new System.Drawing.Size(143, 95);
             this.statsBox.TabIndex = 2;
+            // 
+            // statValueBox
+            // 
+            this.statValueBox.FormattingEnabled = true;
+            this.statValueBox.Location = new System.Drawing.Point(565, 160);
+            this.statValueBox.Name = "statValueBox";
+            this.statValueBox.Size = new System.Drawing.Size(143, 21);
+            this.statValueBox.TabIndex = 3;
+            this.statValueBox.Text = "(Enter the effect amount)";
+            this.statValueBox.TextChanged += new System.EventHandler(this.StatValueBox);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 447);
+            this.Controls.Add(this.statValueBox);
             this.Controls.Add(this.statsBox);
             this.Controls.Add(this.button_createConsumable);
             this.Name = "Form1";
@@ -66,8 +78,7 @@
         #endregion
         private System.Windows.Forms.Button button_createConsumable;
         private System.Windows.Forms.ListBox statsBox;
-
-
+        private System.Windows.Forms.ComboBox statValueBox;
     }
 }
 
