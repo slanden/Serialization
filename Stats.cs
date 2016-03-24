@@ -48,8 +48,11 @@ namespace Serialization
         [Serializable]
         public class Effect
         {
-            string name;
-            int value;
+            string _name;
+            int _value;
+
+            public string name { get { return _name; } set { _name = value; } }
+            public int value { get { return _value; } set { _value = value; } }
         }
         
         List<Stat> _stats = new List<Stat>();
