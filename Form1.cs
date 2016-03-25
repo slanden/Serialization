@@ -12,6 +12,8 @@ namespace Serialization
 {
     public partial class Form1 : Form
     {
+        List<Stats.Effect> knownEffects = new List<Stats.Effect>();
+
         public Form1()
         {
             InitializeComponent();
@@ -68,12 +70,23 @@ namespace Serialization
             else
             {
                 Stats.Effect effect = new Stats.Effect();
-                effect.name = (string)statsBox.SelectedValue;
+                effect.name = (string)statsBox.SelectedItem;
                 int value;
                 int.TryParse(statValueBox.Text, out value);
                 effect.value = value;
 
-                effectsBox.Items.Add(effect);
+                string effectPrefix;
+                if (effect.value < 0)
+                    effectPrefix = "Damage";
+                else
+                    effectPrefix = "Fortify";
+
+                
+
+                effect.name = effectPrefix + " " + effect.name;
+
+                knownEffects.Add(effect);
+                //effectsBox.Items.Add(newEffectName);
             }
         }
     }

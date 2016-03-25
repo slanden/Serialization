@@ -12,7 +12,7 @@ namespace Serialization
 
         void Add(Stats.Effect effect)
         {
-
+            
         }
     }
 }

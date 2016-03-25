@@ -37,7 +37,6 @@
             this.statsLabel = new System.Windows.Forms.Label();
             this.effectsBox = new System.Windows.Forms.ListBox();
             this.knownEffectsLabel = new System.Windows.Forms.Label();
-            this.effectsTable = new System.Windows.Forms.TableLayoutPanel();
             this.SuspendLayout();
             // 
             // button_createConsumable
@@ -108,7 +107,7 @@
             this.effectsBox.FormattingEnabled = true;
             this.effectsBox.Location = new System.Drawing.Point(30, 95);
             this.effectsBox.Name = "effectsBox";
-            this.effectsBox.Size = new System.Drawing.Size(120, 95);
+            this.effectsBox.Size = new System.Drawing.Size(198, 95);
             this.effectsBox.TabIndex = 8;
             // 
             // knownEffectsLabel
@@ -120,25 +119,11 @@
             this.knownEffectsLabel.TabIndex = 9;
             this.knownEffectsLabel.Text = "Known Effects:";
             // 
-            // effectsTable
-            // 
-            this.effectsTable.ColumnCount = 2;
-            this.effectsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.effectsTable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.effectsTable.Location = new System.Drawing.Point(156, 95);
-            this.effectsTable.Name = "effectsTable";
-            this.effectsTable.RowCount = 2;
-            this.effectsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.effectsTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.effectsTable.Size = new System.Drawing.Size(200, 100);
-            this.effectsTable.TabIndex = 10;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 447);
-            this.Controls.Add(this.effectsTable);
             this.Controls.Add(this.knownEffectsLabel);
             this.Controls.Add(this.effectsBox);
             this.Controls.Add(this.statsLabel);
@@ -166,7 +151,6 @@
         private System.Windows.Forms.Label statsLabel;
         private System.Windows.Forms.ListBox effectsBox;
         private System.Windows.Forms.Label knownEffectsLabel;
-        private System.Windows.Forms.TableLayoutPanel effectsTable;
     }
 }
 
